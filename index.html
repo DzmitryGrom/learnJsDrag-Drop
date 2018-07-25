@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drag&drop</title>
+    <style>
+        body,html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            background: red;
+            width: 500px;
+            height: 500px;
+            font-size: 0;
+        }
+        .box__dd {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: black;
+            margin: 5px;
+        }
+        #wrapper {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="start" class="box">
+            <div id="object1" class="box__dd"></div>
+            <div id="object2" class="box__dd"></div>
+            <div id="object3" class="box__dd"></div>
+            <div id="object4" class="box__dd"></div>
+            <div id="object5" class="box__dd"></div>
+            <div id="object6" class="box__dd"></div>
+            <div id="object7" class="box__dd"></div>
+            <div id="object8" class="box__dd"></div>
+        </div>
+        <div id="finish" class="box"></div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
